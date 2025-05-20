@@ -21,11 +21,29 @@ jobs:
 
       - name: Clone wiki and sync content
         run: |
-          git clone https://github.com/${{ github.repository }}.wiki.git wiki
+          # Clonar wiki en carpeta local wiki
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git wiki
+
+          # Copiar y reemplazar todos los archivos desde wiki-src a wiki
           cp -r wiki-src/* wiki/
+
           cd wiki
+
+          # Configurar git para commits
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+          # Mostrar estado para debug
+          git status
+
+          # Agregar cambios
           git add .
+
+          # Mostrar diferencias para debug
+          git diff --staged || echo "No changes staged"
+
+          # Hacer commit solo si hay cambios
           git commit -m "Sync wiki from wiki-src" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git HEAD:master
+
+          # Empujar cambios a la rama master de la wiki
+          git push origin master
