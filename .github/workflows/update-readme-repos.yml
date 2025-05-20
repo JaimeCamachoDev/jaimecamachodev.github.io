@@ -16,33 +16,19 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y jq
-
       - name: Obtener lista de repositorios y actualizar README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: JaimeCamachoDev
         run: |
-          repos=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-            "https://api.github.com/users/$GITHUB_USER/repos?per_page=100" | \
-            jq -r ".[] | \"- [\\(.name)](https://github.com/$GITHUB_USER/\\(.name)) – \\(.description // 'Breve descripción')\"" | \
-            sed "s/'/\\'/g")
-
-          if [ -z "$repos" ]; then
-            echo "Error: No repositories found or API call failed."
-            exit 1
-          fi
+          repos=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/users/$GITHUB_USER/repos?per_page=100" | jq -r '.[] | "- [\(.name)](https://github.com/'$GITHUB_USER'/\(.name)) – Breve descripción."')
 
           echo "Lista de repos:"
           echo "$repos"
 
-          printf -v repos_safe "%s\n" "$repos"
-
+          # Reemplazar la sección en README.md con sed
           sed -i '/## Repositorios y Proyectos Destacados/,/## /c\
-## Repositorios y Proyectos Destacados\n\n'"$repos_safe"'\n' README.md
+## Repositorios y Proyectos Destacados\n\n'"$repos"'\n' README.md
 
       - name: Commit y push cambios
         run: |
