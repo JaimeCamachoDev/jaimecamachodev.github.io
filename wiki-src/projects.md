@@ -1,6 +1,9 @@
 # Proyectos activos
 
 ## 🎮 The Last Stronghold (Carcassonne 1304)
+## 🎮 The Last Stronghold (Carcassonne 1304)
+## 🎮 The Last Stronghold (Carcassonne 1304)
+
 
 Experiencia inmersiva histórica. Soy coordinador técnico y organizador de tareas.
 
