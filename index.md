@@ -1,4 +1,4 @@
-# 🧠 Wiki Central – JaimeCamachoDev
+
 
 ¡Bienvenido a mi espacio de organización y aprendizaje personal!
 
