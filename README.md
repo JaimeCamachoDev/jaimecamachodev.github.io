@@ -20,13 +20,6 @@ Aquí centralizo mis notas, proyectos, recursos técnicos, experimentos en VFX, 
 Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado en gráficos por computadora, VFX y desarrollo web. Este espacio es mi centro de documentación y experimentación.
 
 ## Repositorios y Proyectos Destacados
-
-- [Repositorio 1](#) – Breve descripción.
-- [Repositorio 2](#) – Breve descripción.
-- [Repositorio 3](#) – Breve descripción.
-
-*(Agrega aquí los repositorios que quieras destacar, con una breve explicación de cada uno)*
-
 ## VFX y Shaders
 
 - Recursos, experimentos y ejemplos sobre VFX.
