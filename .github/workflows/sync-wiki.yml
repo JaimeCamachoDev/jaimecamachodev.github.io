@@ -7,6 +7,10 @@ on:
     paths:
       - 'wiki-src/**'
 
+permissions:
+  contents: write
+  issues: read
+
 jobs:
   sync-wiki:
     runs-on: ubuntu-latest
@@ -15,7 +19,7 @@ jobs:
       - name: Checkout main repo
         uses: actions/checkout@v3
 
-      - name: Clone wiki
+      - name: Clone wiki and sync content
         run: |
           git clone https://github.com/${{ github.repository }}.wiki.git wiki
           cp -r wiki-src/* wiki/
@@ -23,5 +27,5 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add .
-          git commit -m "Sync wiki from wiki-src"
+          git commit -m "Sync wiki from wiki-src" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git HEAD:master
