@@ -17,37 +17,31 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y jq
+        run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Obtener lista de repositorios y actualizar README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: JaimeCamachoDev
         run: |
-          curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/users/$GITHUB_USER/repos?per_page=100" > repos.json
-          cat repos.json | jq '.' || echo "Failed to parse JSON"
+          repos=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/users/$GITHUB_USER/repos?per_page=100" | \
+            jq -r '.[] | "- [\(.name)](https://github.com/'$GITHUB_USER'/\(.name)) – \(.description // "Breve descripción")"')
 
-          repos=$(cat repos.json | jq -r '.[] | "- [\(.name)](https://github.com/'$GITHUB_USER'/\(.name)) – \(.description // "Breve descripción")"')
           if [ -z "$repos" ]; then
-            echo "No repositories found or API call failed."
+            echo "Error: No repositories found or API call failed."
             exit 1
           fi
 
           echo "Lista de repos:"
           echo "$repos"
 
-          if [ ! -f README.md ]; then
-            echo "README.md not found, creating a new one."
-            echo "## Repositorios y Proyectos Destacados" > README.md
-          fi
+          # Escapar contenido para sed usando printf
+          printf -v repos_safe "%s\n" "$repos"
 
+          # Reemplazar sección en README.md con sed, usando variable segura
           sed -i '/## Repositorios y Proyectos Destacados/,/## /c\
-          ## Repositorios y Proyectos Destacados\n\n'"$repos"'\n' README.md || {
-            echo "Failed to update README.md with sed."
-            exit 2
-          }
+## Repositorios y Proyectos Destacados\n\n'"$repos_safe"'\n' README.md
 
       - name: Commit y push cambios
         run: |
