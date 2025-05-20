@@ -1,0 +1,58 @@
+name: Actualizar sección de repositorios en README
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Obtener lista de repositorios y actualizar README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: JaimeCamachoDev
+        run: |
+          # Obtener lista de repos y crear el markdown con descripción vacía
+          repos=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/users/$GITHUB_USER/repos?per_page=100" | jq -r '.[] | "- [\\(.name)](https://github.com/'$GITHUB_USER'/\\(.name)) – Breve descripción."')
+
+          # Crear archivo temporal con la nueva sección
+          echo "## Repositorios y Proyectos Destacados" > new_section.md
+          echo "" >> new_section.md
+          echo "$repos" >> new_section.md
+
+          # Reemplazar la sección en README.md
+          awk '
+          BEGIN {skip=0}
+          /^## Repositorios y Proyectos Destacados/ {print; getline; skip=1}
+          skip && /^## / {skip=0}
+          !skip {print}
+          END {
+            if (skip) system("cat new_section.md")
+          }
+          ' README.md > README_new.md
+
+          # Añadir la nueva sección si no existía
+          if ! grep -q "## Repositorios y Proyectos Destacados" README_new.md; then
+            cat README_new.md new_section.md > README_final.md
+            mv README_final.md README_new.md
+          fi
+
+          mv README_new.md README.md
+          rm new_section.md
+
+      - name: Commit y push cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Actualizar sección de repositorios en README" || echo "Sin cambios"
+          git push
