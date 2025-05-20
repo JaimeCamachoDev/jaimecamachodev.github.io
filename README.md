@@ -1,36 +1,82 @@
 <header>
 
-![Sin título-2](https://github.com/user-attachments/assets/5b933a56-0ece-452a-99c0-1a641485a6b9)
+![Banner](https://github.com/user-attachments/assets/5b933a56-0ece-452a-99c0-1a641485a6b9)
 
-# Titulo
+# Nombre del Proyecto
 
-_Descripción_
+_Repositorio generado a partir de la plantilla base de JaimeCamachoDev._
 
 </header>
 
-## Subtitulo
+> 📚 Documentación central del sistema:  
+> 👉 [Wiki Central de JaimeCamachoDev](https://jaimecamachodev.github.io)
 
-Descripción :tada: :keyboard: 
+---
 
-Asi se hacen hypervinculos [repository](https://github.com/JaimeCamachoDev/Template?tab=readme-ov-file#titulo).
+## 📦 Descripción
 
-### Encabezado
+Breve resumen del propósito del proyecto. Puedes describir funcionalidades, objetivos o tecnologías utilizadas.
 
-1. Lista
-1. Lista
-1. Lista
-1. Lista
-1. Lista
-1. Lista
+---
+
+## 🚀 Comenzar
+
+### Instalación
+
+```bash
+git clone https://github.com/JaimeCamachoDev/este-repo.git
+cd este-repo
+```
+
+### Uso
+
+Instrucciones básicas para poner en marcha el proyecto.
+
+---
+
+## 📁 Estructura del Repositorio
+
+```
+📁 src/            # Código fuente
+📁 docs/           # Documentación adicional
+📄 README.md       # Esta documentación
+```
+
+---
+
+## 🔗 Recursos relacionados
+
+- [Documentación del proyecto (Wiki)](../../wiki)
+- [Wiki Central](https://jaimecamachodev.github.io)
+- [Repositorio original de la plantilla](https://github.com/JaimeCamachoDev/Template)
+
+---
+
+## ✅ Tareas
+
+- [ ] Especificar requerimientos
+- [ ] Completar documentación
+- [ ] Subir versión inicial
+
+---
+
+## 🧪 Tecnologías usadas
+
+- Unity
+- GitHub Pages
+- Markdown
+
+---
+
+## 🪪 Licencia
+
+Este proyecto está bajo la [Licencia MIT](LICENSE).  
+Puedes usarlo, modificarlo o distribuirlo libremente. ¡Haz lo que quieras! 🎉
 
 <footer>
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
- 
 ---
 
-</footer>
+¿Preguntas o sugerencias? Puedes abrir un issue o visitar la wiki principal.
 
+</footer>
