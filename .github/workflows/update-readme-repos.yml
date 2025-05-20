@@ -28,7 +28,7 @@ jobs:
         run: |
           repos=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
             "https://api.github.com/users/$GITHUB_USER/repos?per_page=100" | \
-            jq -r '.[] | "- [\(.name)](https://github.com/'$GITHUB_USER'/\(.name)) – \(.description // \"Breve descripción\")"' | \
+            jq -r ".[] | \"- [\\(.name)](https://github.com/$GITHUB_USER/\\(.name)) – \\(.description // 'Breve descripción')\"" | \
             sed "s/'/\\'/g")
 
           if [ -z "$repos" ]; then
