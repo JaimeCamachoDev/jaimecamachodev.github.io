@@ -1,11 +1,11 @@
-name: Sync Wiki from wiki-src
+name: Sync Wiki from root
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'wiki-src/**'
+      - '**/*.md'        # Detecta cambios en cualquier .md en la raíz o subcarpetas
 
 permissions:
   contents: write
@@ -21,29 +21,21 @@ jobs:
 
       - name: Clone wiki and sync content
         run: |
-          # Clonar wiki en carpeta local wiki
           git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git wiki
 
-          # Copiar y reemplazar todos los archivos desde wiki-src a wiki
-          cp -r wiki-src/* wiki/
+          # Copiar todos los archivos markdown de la raíz a la carpeta wiki
+          cp *.md wiki/ || echo "No markdown files in root"
 
           cd wiki
 
-          # Configurar git para commits
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-          # Mostrar estado para debug
           git status
-
-          # Agregar cambios
+          git diff --staged || echo "No changes staged"
           git add .
 
-          # Mostrar diferencias para debug
-          git diff --staged || echo "No changes staged"
+          git commit -m "Sync wiki from repo root" || echo "No changes to commit"
 
-          # Hacer commit solo si hay cambios
-          git commit -m "Sync wiki from wiki-src" || echo "No changes to commit"
-
-          # Empujar cambios a la rama master de la wiki
           git push origin master
+
