@@ -3,6 +3,8 @@
 
 ¡Bienvenido a mi espacio de organización y aprendizaje personal!
 
+holiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+
 ## ✨ Secciones
 
 - [📁 Sobre mí](about.md)
