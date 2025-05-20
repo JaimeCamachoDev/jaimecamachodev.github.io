@@ -1,82 +1,58 @@
-<header>
 
-![Banner](https://github.com/user-attachments/assets/5b933a56-0ece-452a-99c0-1a641485a6b9)
+# JaimeCamachoDev Wiki Personal
 
-# Nombre del Proyecto
+¡Bienvenido/a a mi wiki personal!  
+Aquí centralizo mis notas, proyectos, recursos técnicos, experimentos en VFX, shaders y más. Este espacio funciona como un índice y punto de partida para explorar mis aportes y referencias en distintas áreas.
 
-_Repositorio generado a partir de la plantilla base de JaimeCamachoDev._
+## 📌 Índice
 
-</header>
-
-> 📚 Documentación central del sistema:  
-> 👉 [Wiki Central de JaimeCamachoDev](https://jaimecamachodev.github.io)
-
----
-
-## 📦 Descripción
-
-Breve resumen del propósito del proyecto. Puedes describir funcionalidades, objetivos o tecnologías utilizadas.
+- [Sobre mí](#sobre-mí)
+- [Repositorios y Proyectos Destacados](#repositorios-y-proyectos-destacados)
+- [VFX y Shaders](#vfx-y-shaders)
+- [Notas Técnicas](#notas-técnicas)
+- [Recursos y Enlaces Útiles](#recursos-y-enlaces-útiles)
+- [Contacto](#contacto)
 
 ---
 
-## 🚀 Comenzar
+## Sobre mí
 
-### Instalación
+Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado en gráficos por computadora, VFX y desarrollo web. Este espacio es mi centro de documentación y experimentación.
 
-```bash
-git clone https://github.com/JaimeCamachoDev/este-repo.git
-cd este-repo
-```
+## Repositorios y Proyectos Destacados
 
-### Uso
+- [Repositorio 1](#) – Breve descripción.
+- [Repositorio 2](#) – Breve descripción.
+- [Repositorio 3](#) – Breve descripción.
 
-Instrucciones básicas para poner en marcha el proyecto.
+*(Agrega aquí los repositorios que quieras destacar, con una breve explicación de cada uno)*
 
----
+## VFX y Shaders
 
-## 📁 Estructura del Repositorio
+- Recursos, experimentos y ejemplos sobre VFX.
+- Colección de shaders personales, tutoriales y análisis.
 
-```
-📁 src/            # Código fuente
-📁 docs/           # Documentación adicional
-📄 README.md       # Esta documentación
-```
+## Notas Técnicas
 
----
+- Apuntes sobre programación, gráficos, pipelines y herramientas.
+- Guías rápidas y referencias útiles.
 
-## 🔗 Recursos relacionados
+## Recursos y Enlaces Útiles
 
-- [Documentación del proyecto (Wiki)](../../wiki)
-- [Wiki Central](https://jaimecamachodev.github.io)
-- [Repositorio original de la plantilla](https://github.com/JaimeCamachoDev/Template)
+- Herramientas recomendadas
+- Lecturas, blogs y tutoriales favoritos
+- Recursos externos relevantes
 
----
+## Contacto
 
-## ✅ Tareas
-
-- [ ] Especificar requerimientos
-- [ ] Completar documentación
-- [ ] Subir versión inicial
+- [Mi perfil de GitHub](https://github.com/JaimeCamachoDev)
+- [LinkedIn](#) *(opcional)*
+- Email: tuemail@ejemplo.com *(opcional)*
 
 ---
 
-## 🧪 Tecnologías usadas
-
-- Unity
-- GitHub Pages
-- Markdown
+> Este sitio está en constante evolución. ¡Vuelve pronto para más actualizaciones!
 
 ---
 
-## 🪪 Licencia
-
-Este proyecto está bajo la [Licencia MIT](LICENSE).  
-Puedes usarlo, modificarlo o distribuirlo libremente. ¡Haz lo que quieras! 🎉
-
-<footer>
-
----
-
-¿Preguntas o sugerencias? Puedes abrir un issue o visitar la wiki principal.
-
-</footer>
+¿Quieres que alguna sección tenga algún formato o diseño especial? ¿Prefieres que incluya ejemplos de tablas, imágenes, badges o algún elemento visual adicional? Si tienes alguna preferencia de idioma o enfoque, dime y lo adapto a tus necesidades.
