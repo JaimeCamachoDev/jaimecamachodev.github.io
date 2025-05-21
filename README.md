@@ -1,5 +1,5 @@
 
-# JaimeCamachoDev Wiki Personal.
+# JaimeCamachoDev Wiki Personal
 
 ¡Bienvenido/a a mi wiki personal!  
 Aquí centralizo mis notas, proyectos, recursos técnicos, experimentos en VFX, shaders y más. Este espacio funciona como un índice y punto de partida para explorar mis aportes y referencias en distintas áreas.
