@@ -42,19 +42,20 @@ Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado e
 - [ShaderGraph_MAS_and_Substance_Export](https://github.com/JaimeCamachoDev/ShaderGraph_MAS_and_Substance_Export) – Shader Uniy MAS / MASAE and substance exporting configuration whit this shader 
 - [ShaderGraph_MulltiScreen](https://github.com/JaimeCamachoDev/ShaderGraph_MulltiScreen) – Shader Graph in Unity 6 URP, MultiScreen
 - [ShaderGraph_Toon](https://github.com/JaimeCamachoDev/ShaderGraph_Toon) – GitHub Desktop tutorial repository
+- [ShaderGraph_ToonLitShader](https://github.com/JaimeCamachoDev/ShaderGraph_ToonLitShader) – A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP
 - [ShaderGraph_Water](https://github.com/JaimeCamachoDev/ShaderGraph_Water) – Shader Unity 6 URP, Waters
 - [Shader_Stencil_Buffer](https://github.com/JaimeCamachoDev/Shader_Stencil_Buffer) –  Stencil buffer in Unity URP 
 - [Tool_AppScript_OVRMetrics](https://github.com/JaimeCamachoDev/Tool_AppScript_OVRMetrics) – Script for OVR Metrics
 - [Tool_DiscoverVZ](https://github.com/JaimeCamachoDev/Tool_DiscoverVZ) – Tool in Unity 6, DiscoverVZ component
 - [Tool_Unity-Editor-Icons](https://github.com/JaimeCamachoDev/Tool_Unity-Editor-Icons) – Breve descripción.
-- [UnityURPToonLitShaderExample](https://github.com/JaimeCamachoDev/UnityURPToonLitShaderExample) – A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP
+- [Tool_VZ_Folders](https://github.com/JaimeCamachoDev/Tool_VZ_Folders) – Config RainbowFoldersRulesets and Script FolderVZCreator 
 - [Unity_Metatex](https://github.com/JaimeCamachoDev/Unity_Metatex) – Metadata-only texture importer for Unity
 - [Unity_Resources](https://github.com/JaimeCamachoDev/Unity_Resources) – Breve descripción.
 - [Unity_StandardAssets](https://github.com/JaimeCamachoDev/Unity_StandardAssets) – Breve descripción.
-- [VfxExtra](https://github.com/JaimeCamachoDev/VfxExtra) – Extra utilities for Unity Visual Effect Graph
 - [VFXToolbox](https://github.com/JaimeCamachoDev/VFXToolbox) – Additional tools for Visual Effect Artists
 - [VFX_AnimusFloor](https://github.com/JaimeCamachoDev/VFX_AnimusFloor) – VFX Graph in Unity 6 URP, Animus Floor
 - [VFX_Button_Sci-Fi](https://github.com/JaimeCamachoDev/VFX_Button_Sci-Fi) – VFX Graph in Unity 6, Button Sci-Fi 
+- [VFX_Extra](https://github.com/JaimeCamachoDev/VFX_Extra) – Extra utilities for Unity Visual Effect Graph
 - [VFX_FloatingDust](https://github.com/JaimeCamachoDev/VFX_FloatingDust) – VFX Graph in Unity 6 URP, Floating Dust
 - [VFX_FloatingFog](https://github.com/JaimeCamachoDev/VFX_FloatingFog) – VFX Graph in Unity 6 URP, Floating Fog
 - [VFX_Galaxy](https://github.com/JaimeCamachoDev/VFX_Galaxy) – VFX Graph in Unity 6 URP, Galaxy 
@@ -66,12 +67,6 @@ Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado e
 - [VFX_PlanckScale](https://github.com/JaimeCamachoDev/VFX_PlanckScale) – VFX Graph in Unity 6 URP,  Representation of the Planck Scale
 - [VFX_Proyector](https://github.com/JaimeCamachoDev/VFX_Proyector) – VFX Graph Proyector in Unity URP
 - [VFX_SDF_Lines](https://github.com/JaimeCamachoDev/VFX_SDF_Lines) – VFX Graph in Unity 6 URP, SDF Lines
-- [VZ_Folders](https://github.com/JaimeCamachoDev/VZ_Folders) – Config RainbowFoldersRulesets and Script FolderVZCreator 
-
-- Apuntes sobre programación, gráficos, pipelines y herramientas.
-- Guías rápidas y referencias útiles.
-
-## Recursos y Enlaces Útiles
 
 - Herramientas recomendadas
 - Lecturas, blogs y tutoriales favoritos
