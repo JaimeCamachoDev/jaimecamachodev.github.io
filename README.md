@@ -22,7 +22,8 @@ Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado e
 ## Repositorios y Proyectos Destacados
 - [FALTA-SubGraph_Lava](https://github.com/JaimeCamachoDev/FALTA-SubGraph_Lava) – Sub Graph in Unity 6 URP, Lava effect
 - [jaimecamachodev.github.io](https://github.com/JaimeCamachoDev/jaimecamachodev.github.io) – Repositorio principal de mi sitio personal en GitHub Pages. Aquí centralizo mis notas, proyectos y recursos técnicos en un formato tipo wiki, usando Markdown.
-- [Particles_SpeedLines](https://github.com/JaimeCamachoDev/Particles_SpeedLines) – Particle System in Unity 6 URP, Speed Lines
+- [Metatex_Unity6](https://github.com/JaimeCamachoDev/Metatex_Unity6) – Metadata-only texture importer for Unity 6
+- [Particles_SpeedLine](https://github.com/JaimeCamachoDev/Particles_SpeedLine) – Particle System in Unity 6 URP, Speed Lines
 - [Particle_Bubbles](https://github.com/JaimeCamachoDev/Particle_Bubbles) – Particle System in Unity 6 URP
 - [Particle_Explosion](https://github.com/JaimeCamachoDev/Particle_Explosion) – Particle System in Unity 6 URP, Explosion
 - [Particle_FakeLight](https://github.com/JaimeCamachoDev/Particle_FakeLight) – Particle System in Unity 6 URP, Fake Light
@@ -30,7 +31,6 @@ Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado e
 - [Particle_JetFire](https://github.com/JaimeCamachoDev/Particle_JetFire) – Particle System in Unity 6 URP
 - [Particle_ObservableUniverse](https://github.com/JaimeCamachoDev/Particle_ObservableUniverse) – Particle System in Unity 6 URP, Observable Universe 
 - [Particle_Waterfall](https://github.com/JaimeCamachoDev/Particle_Waterfall) – Particle System in Unity 6 URP
-- [Resource_Template_UnityProyect](https://github.com/JaimeCamachoDev/Resource_Template_UnityProyect) – Repository for Template
 - [ShaderAmplify_Hologram](https://github.com/JaimeCamachoDev/ShaderAmplify_Hologram) – Shader Amplify in Unity 6 URP
 - [ShaderGraph_Caustics](https://github.com/JaimeCamachoDev/ShaderGraph_Caustics) – Shader Unity 6 URP, Caustics
 - [ShaderGraph_Chaperone](https://github.com/JaimeCamachoDev/ShaderGraph_Chaperone) – Shader Unity 6 URP, Chaperone
@@ -41,10 +41,11 @@ Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado e
 - [ShaderGraph_HoneyComb](https://github.com/JaimeCamachoDev/ShaderGraph_HoneyComb) – Shader Unity 6 URP, Pulse for HoneyComb
 - [ShaderGraph_MAS_and_Substance_Export](https://github.com/JaimeCamachoDev/ShaderGraph_MAS_and_Substance_Export) – Shader Uniy MAS / MASAE and substance exporting configuration whit this shader 
 - [ShaderGraph_MulltiScreen](https://github.com/JaimeCamachoDev/ShaderGraph_MulltiScreen) – Shader Graph in Unity 6 URP, MultiScreen
-- [ShaderGraph_Toon](https://github.com/JaimeCamachoDev/ShaderGraph_Toon) – GitHub Desktop tutorial repository
-- [ShaderGraph_ToonLitShader](https://github.com/JaimeCamachoDev/ShaderGraph_ToonLitShader) – A very simple toon lit shader example, for you to learn writing custom lit shader in Unity URP
 - [ShaderGraph_Water](https://github.com/JaimeCamachoDev/ShaderGraph_Water) – Shader Unity 6 URP, Waters
+- [ShaderToon](https://github.com/JaimeCamachoDev/ShaderToon) – Shader in Unity 6 URP, Toon
 - [Shader_Stencil_Buffer](https://github.com/JaimeCamachoDev/Shader_Stencil_Buffer) –  Stencil buffer in Unity URP 
+- [SpeedLines](https://github.com/JaimeCamachoDev/SpeedLines) – Particle System in Unity 6 URP, Speed Lines
+- [TestPackage](https://github.com/JaimeCamachoDev/TestPackage) – Breve descripción.
 - [Tool_AppScript_OVRMetrics](https://github.com/JaimeCamachoDev/Tool_AppScript_OVRMetrics) – Script for OVR Metrics
 - [Tool_DiscoverVZ](https://github.com/JaimeCamachoDev/Tool_DiscoverVZ) – Tool in Unity 6, DiscoverVZ component
 - [Tool_Unity-Editor-Icons](https://github.com/JaimeCamachoDev/Tool_Unity-Editor-Icons) – Breve descripción.
@@ -67,12 +68,6 @@ Soy Jaime Camacho, desarrollador y entusiasta de la tecnología, especializado e
 - [VFX_PlanckScale](https://github.com/JaimeCamachoDev/VFX_PlanckScale) – VFX Graph in Unity 6 URP,  Representation of the Planck Scale
 - [VFX_Proyector](https://github.com/JaimeCamachoDev/VFX_Proyector) – VFX Graph Proyector in Unity URP
 - [VFX_SDF_Lines](https://github.com/JaimeCamachoDev/VFX_SDF_Lines) – VFX Graph in Unity 6 URP, SDF Lines
-
-- Herramientas recomendadas
-- Lecturas, blogs y tutoriales favoritos
-- Recursos externos relevantes
-
-## Contacto
 
 - [Mi perfil de GitHub](https://github.com/JaimeCamachoDev)
 - [LinkedIn](#) *(opcional)*
