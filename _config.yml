@@ -1,5 +1,17 @@
 title: JaimeCamachoDev Wiki
 description: Documentación personal y técnica
+url: "https://jaimecamachodev.github.io"
 theme: minima
 plugins:
   - jekyll-readme-index
+
+readme_index:
+  enabled: true
+
+# Ruta para páginas personalizadas
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
