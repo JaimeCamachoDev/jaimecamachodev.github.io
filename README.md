@@ -1,6 +1,6 @@
 # Plantilla de Wiki y Web unificadas
 
-Este repositorio es un ejemplo de cómo centralizar tu documentación personal en un único lugar:
+Este repositorio es un ejemplo de cómo centralizar tu documentación personal en un único lugar: 
 * **README** sirve como página de inicio de la web gracias al plugin `jekyll-readme-index`.
 * Los archivos Markdown se sincronizan con la wiki mediante un workflow.
 * GitHub Pages genera automáticamente la web con Jekyll y el tema **minima**.
