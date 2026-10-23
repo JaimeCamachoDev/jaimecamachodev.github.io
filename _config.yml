@@ -1,17 +1,24 @@
-title: JaimeCamachoDev Wiki
-description: Documentación personal y técnica
+title: Jaime Camacho · VFX & Unity
+description: Efectos visuales, shaders y herramientas para Unity
 url: "https://jaimecamachodev.github.io"
 theme: minima
-plugins:
-  - jekyll-readme-index
 
-readme_index:
-  enabled: true
+github_username: JaimeCamachoDev
 
-# Ruta para páginas personalizadas
+header_pages:
+  - _pages/about.md
+
 defaults:
   - scope:
       path: "_pages"
     values:
       layout: page
 
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - scripts/
+  - Gemfile
+  - Gemfile.lock

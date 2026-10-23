@@ -1,0 +1,33 @@
+name: Actualizar portfolio
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_data/categorias.yml"
+      - "scripts/generar_portfolio.py"
+      - ".github/workflows/portfolio.yml"
+  schedule:
+    - cron: "17 5 * * *"   # cada día: recoge repos nuevos, cambios de visibilidad y versiones npm
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generar index.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generar_portfolio.py
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.md
+          git diff --cached --quiet && echo "Sin cambios" || { git commit -m "Actualiza el portfolio"; git push; }

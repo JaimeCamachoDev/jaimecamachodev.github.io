@@ -1,0 +1,87 @@
+---
+layout: page
+title: Portfolio
+permalink: /
+---
+
+Technical Artist y desarrollador de Unity: efectos visuales, shaders y herramientas de editor para proyectos en tiempo real y VR.
+
+<div class="portfolio">
+<h2>VFX y shaders</h2>
+<p class="cat-desc">Efectos visuales, shaders y sistemas de partículas para Unity URP.</p>
+<div class="rejilla">
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Dissolve"><img src="https://github.com/user-attachments/assets/9f2297f2-0a73-427e-98ba-21dceaf2b2d7" alt="Dissolve" loading="lazy"><div class="texto"><strong>Dissolve</strong><span>Colección de shaders de disolución. Ideal para transiciones de aparición y desapariciones.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Hologram"><img src="https://github.com/user-attachments/assets/76338c11-5da3-4050-8cc8-c7a70f696ae9" alt="Hologram" loading="lazy"><div class="texto"><strong>Hologram</strong><span>Shader Amplify in Unity 6 URP</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Water_Underwater"><img src="https://github.com/user-attachments/assets/dcfae01f-2b7e-46bc-a5c2-b5d1e26d1aef" alt="Water_Underwater" loading="lazy"><div class="texto"><strong>Water_Underwater</strong><span>Sistema visual de agua y entorno submarino para URP. Incluye efectos inmersivos ideales para escenas acuáticas o VR.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Clouds-Smoke"><img src="https://github.com/user-attachments/assets/77ee5d5a-ebc6-4caf-b329-3d7c396ba418" alt="Clouds-Smoke" loading="lazy"><div class="texto"><strong>Clouds-Smoke</strong><span>Clouds in Unity </span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Explosion-Fire"><img src="https://github.com/user-attachments/assets/8c2509bd-e768-4091-94d7-c960a80bba3a" alt="Explosion-Fire" loading="lazy"><div class="texto"><strong>Explosion-Fire</strong><span>Particle System in Unity 6 URP, Explosion</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Blood"><img src="https://github.com/user-attachments/assets/4f783fb4-890d-4d0e-9d58-ca483e76f8c6" alt="Blood" loading="lazy"><div class="texto"><strong>Blood</strong><span>Efectos visuales de sangre: salpicaduras, manchas y partículas para impactos y escenas sangrientas</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Decals"><img src="https://github.com/user-attachments/assets/c4e86f74-e134-4b7f-9791-22ebd9b2fb76" alt="Decals" loading="lazy"><div class="texto"><strong>Decals</strong><span>Sistemas de Decals en Unity 6</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Toon"><img src="https://github.com/user-attachments/assets/27584a89-8e50-4057-8e75-c122244521c1" alt="Toon" loading="lazy"><div class="texto"><strong>Toon</strong><span>Shader estilizado tipo toon para renderizado no fotorrealista (NPR). Simula sombreado , contornos y niveles de iluminación tipo dibujo animado o cómic. </span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Outline"><img src="https://github.com/user-attachments/assets/3b7b83a5-f633-4dad-af07-fc4ca8f6ba5b" alt="Outline" loading="lazy"><div class="texto"><strong>Outline</strong><span>Efecto de contorno para objetos 3D. Genera bordes visibles, ideal para resaltar elementos interactivos o lograr un estilo toon/cómic.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Wireframe"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Wireframe</strong><span>Wireframe shader for Unity 6</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/SDF_Lines"><img src="https://github.com/user-attachments/assets/dfc45635-776d-4a13-baa0-62334f7b9a8b" alt="SDF_Lines" loading="lazy"><div class="texto"><strong>SDF_Lines</strong><span>SDF System in Unity 6 URP</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/FakeLight"><img src="https://github.com/user-attachments/assets/62a08a95-9686-46a1-a06a-3d1ecec688fe" alt="FakeLight" loading="lazy"><div class="texto"><strong>FakeLight</strong><span>Luces volumétricas falsas para simular focos o halos luminosos. Perfecto para efectos atmosféricos sin usar luces reales.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/FakeInterior"><img src="https://github.com/user-attachments/assets/33d05c9a-dcc1-4a13-85dc-44c9fede212d" alt="FakeInterior" loading="lazy"><div class="texto"><strong>FakeInterior</strong><span>Shader de interiores falsos con paralaje en URP (Amplify). Eficiente y personalizable.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Fur-Hair"><img src="https://github.com/user-attachments/assets/844f0b7f-0c85-4f01-9426-a49e22f9cc4e" alt="Fur-Hair" loading="lazy"><div class="texto"><strong>Fur-Hair</strong><span>Sistema de shaders en unity 6 para cabello y pelo</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Galaxy"><img src="https://github.com/user-attachments/assets/b366afb8-62f1-4ce8-972e-5fbc75488045" alt="Galaxy" loading="lazy"><div class="texto"><strong>Galaxy</strong><span>Galaxia con VFX Graph en Unity 6 URP</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Sun"><img src="https://github.com/user-attachments/assets/0cbffd28-4fe1-46d3-aa19-53dec8a90579" alt="Sun" loading="lazy"><div class="texto"><strong>Sun</strong><span>Efecto visual de sol con emisión brillante y partículas energéticas. Ideal para escenas espaciales o entornos místicos.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Boids"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Boids</strong><span>Proyecto en Unity que implementa el algoritmo de Boids para simulación de comportamiento colectivo.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/FloatingDust"><img src="https://github.com/user-attachments/assets/fe1415d7-448b-43f6-bfaf-a318060381f0" alt="FloatingDust" loading="lazy"><div class="texto"><strong>FloatingDust</strong><span>Particulas flotantes de VFX Graph en Unity 6 URP</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/SpeedLines"><img src="https://github.com/user-attachments/assets/ba0d1b29-889a-4104-9151-0da1214771d2" alt="SpeedLines" loading="lazy"><div class="texto"><strong>SpeedLines</strong><span>Efecto de líneas de velocidad estilo anime/cartoon, ideal para reforzar sensación de velocidad o potencia.  </span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Stencil_Buffer"><img src="https://github.com/user-attachments/assets/0837e06f-3df2-4559-8f74-7c1864ac181a" alt="Stencil_Buffer" loading="lazy"><div class="texto"><strong>Stencil_Buffer</strong><span>Sistema basado en Stencil Buffer para crear huecos falsos y efectos de profundidad visual sin geometría real.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/BlackAndWhiteArea"><img src="https://github.com/user-attachments/assets/35791bac-7c06-4aca-827f-2c8b7deeb004" alt="BlackAndWhiteArea" loading="lazy"><div class="texto"><strong>BlackAndWhiteArea</strong><span>Sistema que permite resaltar zonas específicas a color dentro de un entorno en blanco y negro, compatible con VR.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/BlendMeshTexture"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>BlendMeshTexture</strong><span>Blend Meshes and Textures for Unity 6</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/TileStochastic"><img src="https://github.com/user-attachments/assets/ea028a6a-c957-47f8-bf44-6533cc700a14" alt="TileStochastic" loading="lazy"><div class="texto"><strong>TileStochastic</strong><span>Tile sin repeticion visual</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/PlanckScale"><img src="https://github.com/user-attachments/assets/16505aa8-4b3f-42bf-b511-f6fbe19bbe4a" alt="PlanckScale" loading="lazy"><div class="texto"><strong>PlanckScale</strong><span>Vfx System to represents Planks scale</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/ObservableUniverse"><img src="https://github.com/user-attachments/assets/1656d7ac-46c5-4889-94d4-b11b7b57bc99" alt="ObservableUniverse" loading="lazy"><div class="texto"><strong>ObservableUniverse</strong><span>Particle System in Unity 6 URP, Observable Universe</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/HUD_Sci-Fi"><img src="https://github.com/user-attachments/assets/a3cede31-da29-4158-baab-62b9205a748b" alt="HUD_Sci-Fi" loading="lazy"><div class="texto"><strong>HUD_Sci-Fi</strong><span>HUD estilo sci-fi con bloques dinámicos y visualización tipo holograma. Ideal para interfaces futuristas.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/FootPrints"><img src="https://github.com/user-attachments/assets/9bdc4de8-b22f-4e40-9323-8b502ad9f7e9" alt="FootPrints" loading="lazy"><div class="texto"><strong>FootPrints</strong><span>Guía visual con huellas que marcan el camino a seguir. Útil en tutoriales o misiones dirigidas.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Blueprint"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Blueprint</strong><span>Efecto de Blueprint para VR</span></div></a>
+</div>
+<h2>Herramientas para Unity</h2>
+<p class="cat-desc">Paquetes de editor publicados en npm (UPM).</p>
+<div class="rejilla">
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityFolders"><img src="https://github.com/user-attachments/assets/95f4cd3a-c3be-4896-9a63-026bd422bce4" alt="UnityFolders" loading="lazy"><div class="texto"><strong>UnityFolders</strong><span>Carpetas personalizadas para Unity</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityMultiTool"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>UnityMultiTool</strong><span>Herramienta con diversos usos para unity</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityPreset"><img src="https://github.com/user-attachments/assets/e3a901db-12f2-4c94-a371-15b7757a7203" alt="UnityPreset" loading="lazy"><div class="texto"><strong>UnityPreset</strong><span>Presets personalizados para Unity</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/VAT"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>VAT</strong><span>Vertex animation texture</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/DiscoverNotes"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>DiscoverNotes</strong><span>Es un componente de documentación visual en Unity para notas.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/PackageCreator"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>PackageCreator</strong><span>Creador de Packages</span></div></a>
+</div>
+<h2>Demos y proyectos</h2>
+<p class="cat-desc">Demos de VR, benchmarks y proyectos de prueba.</p>
+<div class="rejilla">
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/VR_Demo"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>VR_Demo</strong><span>Proyecto base para experiencias VR en Quest 3</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/VR_Demo_Animation"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>VR_Demo_Animation</strong><span>Proyecto para el testeo de Animaciones en VR</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Benchmark"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Benchmark</strong><span>Herramienta para medir y comparar el rendimiento, ideal para optimizar proyectos y analizar el coste de diferentes técnicas gráficas.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/CC-iC_UnityTools"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>CC-iC_UnityTools</strong><span>Exportado de CC/iClone y configuracion en Unity</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Unity-VFX-Technical-Test"><img src="https://github.com/user-attachments/assets/8ae21af1-7ffb-447a-83fb-59f046fc055c" alt="Unity-VFX-Technical-Test" loading="lazy"><div class="texto"><strong>Unity-VFX-Technical-Test</strong><span>Unity VFX recruitment test focused on technical understanding, artistic execution, optimization and professional delivery.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/DataBase"><img src="https://github.com/user-attachments/assets/c4be976a-a943-4879-bbd9-dccc1f5ae655" alt="DataBase" loading="lazy"><div class="texto"><strong>DataBase</strong><span>Repositorio destinado a albergar los datos para acceder desde los proyectos en Unity</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Demo-Sample"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Demo-Sample</strong><span></span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Rock-Bottom"><img src="https://github.com/user-attachments/assets/4c809483-d393-477d-a565-09e0a5a23a07" alt="Rock-Bottom" loading="lazy"><div class="texto"><strong>Rock-Bottom</strong><span>Reinventa lo cotidiano</span></div></a>
+</div>
+<h2>Utilidades y recursos</h2>
+<p class="cat-desc">Herramientas fuera de Unity y recopilaciones de recursos.</p>
+<div class="rejilla">
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/EditorVideo"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>EditorVideo</strong><span></span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Substance_Export"><img src="https://github.com/user-attachments/assets/d72543f5-ce86-418b-8659-7b0f2b784b14" alt="Substance_Export" loading="lazy"><div class="texto"><strong>Substance_Export</strong><span>Shader Uniy MAS / MASAE and substance exporting configuration whit this shader </span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Tool_AppScript_OVRMetrics"><img src="https://github.com/user-attachments/assets/609fd8b8-58a6-4535-8905-492fdabf8666" alt="Tool_AppScript_OVRMetrics" loading="lazy"><div class="texto"><strong>Tool_AppScript_OVRMetrics</strong><span>Script for OVR Metrics</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Unity_Resources"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Unity_Resources</strong><span></span></div></a>
+</div>
+<h2>Tiempo libre</h2>
+<p class="cat-desc">Mods y proyectos personales.</p>
+<div class="rejilla">
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/HyHorde-Arena-PVE"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>HyHorde-Arena-PVE</strong><span></span></div></a>
+</div>
+<h2>Paquetes npm</h2>
+<p class="cat-desc">Se instalan desde el Package Manager de Unity añadiendo el registro de npm con el ámbito <code>com.jaimecamachodev</code>.</p>
+<table class="paquetes"><tr><th>Paquete</th><th>Versión</th><th>Descripción</th></tr>
+<tr><td><a href="https://www.npmjs.com/package/com.jaimecamachodev.discovernotes">com.jaimecamachodev.discovernotes</a></td><td>1.4.0</td><td>Notas visuales de documentación para escenas, GameObjects y flujos de producción en Unity.</td></tr>
+<tr><td><a href="https://www.npmjs.com/package/com.jaimecamachodev.packagecreator">com.jaimecamachodev.packagecreator</a></td><td>1.1.0</td><td>Genera la estructura de un paquete UPM (package.json, asmdefs, documentación) y los scripts de release y firma.</td></tr>
+<tr><td><a href="https://www.npmjs.com/package/com.jaimecamachodev.unityfolders">com.jaimecamachodev.unityfolders</a></td><td>2.2.0</td><td>Navegador de carpetas para Unity con paletas de color, iconos por carpeta y creación de la estructura estándar de proyecto.</td></tr>
+<tr><td><a href="https://www.npmjs.com/package/com.jaimecamachodev.unitymultitool">com.jaimecamachodev.unitymultitool</a></td><td>1.3.0</td><td>Colección de herramientas de editor para Unity: animación, VAT desde Alembic, mallas y utilidades de producción.</td></tr>
+<tr><td><a href="https://www.npmjs.com/package/com.jaimecamachodev.unitypreset">com.jaimecamachodev.unitypreset</a></td><td>1.0.15</td><td>Creador y aplicador de Presets de importación para Unity (texturas, modelos, audio).</td></tr>
+<tr><td><a href="https://www.npmjs.com/package/com.jaimecamachodev.vat">com.jaimecamachodev.vat</a></td><td>1.0.7</td><td>Herramienta para hornear y reproducir Vertex Animation Textures (VAT) en Unity con shaders de Shader Graph.</td></tr>
+</table>
+</div>

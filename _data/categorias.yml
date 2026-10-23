@@ -1,0 +1,21 @@
+# Categorías del portfolio. Añade aquí cada repo nuevo en su categoría.
+# Solo se muestran los repos públicos; los privados o archivados se omiten solos.
+- titulo: "VFX y shaders"
+  descripcion: "Efectos visuales, shaders y sistemas de partículas para Unity URP."
+  repos: [Dissolve, Hologram, Water_Underwater, Clouds-Smoke, Explosion-Fire, Blood, Decals, Toon, Outline,
+          Wireframe, SDF_Lines, FakeLight, FakeInterior, Fur-Hair, Galaxy, Sun, Boids, Paths, FloatingDust,
+          SpeedLines, Stencil_Buffer, BlackAndWhiteArea, BlendMeshTexture, TileStochastic, PlanckScale,
+          ObservableUniverse, HUD_Sci-Fi, FootPrints, GhostAvatar, EchoReveal, AnimusFloor, Blueprint]
+- titulo: "Herramientas para Unity"
+  descripcion: "Paquetes de editor publicados en npm (UPM)."
+  repos: [UnityFolders, UnityMultiTool, UnityPreset, VAT, DiscoverNotes, PackageCreator]
+- titulo: "Demos y proyectos"
+  descripcion: "Demos de VR, benchmarks y proyectos de prueba."
+  repos: [VR_Demo, VR_Demo_Animation, Shooter_VR_Demo, Chaperone, ArchVizPRO, Benchmark, CC-iC_UnityTools,
+          Unity-VFX-Technical-Test, DataBase, Test-IA, Demo-Sample, Rock-Bottom]
+- titulo: "Utilidades y recursos"
+  descripcion: "Herramientas fuera de Unity y recopilaciones de recursos."
+  repos: [EditorVideo, Substance_Export, Tool_AppScript_OVRMetrics, Unity_Resources]
+- titulo: "Tiempo libre"
+  descripcion: "Mods y proyectos personales."
+  repos: [HyHorde-Arena-PVE]
