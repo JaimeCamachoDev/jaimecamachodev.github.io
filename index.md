@@ -45,7 +45,7 @@ Technical Artist y desarrollador de Unity: efectos visuales, shaders y herramien
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityMultiTool"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>UnityMultiTool</strong><span>Herramienta con diversos usos para unity</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityPreset"><img src="https://github.com/user-attachments/assets/e3a901db-12f2-4c94-a371-15b7757a7203" alt="UnityPreset" loading="lazy"><div class="texto"><strong>UnityPreset</strong><span>Presets personalizados para Unity</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/VAT"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>VAT</strong><span>Vertex animation texture</span></div></a>
-<a class="tarjeta" href="https://github.com/JaimeCamachoDev/DiscoverNotes"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>DiscoverNotes</strong><span>Es un componente de documentación visual en Unity para notas.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/DiscoverNotes"><img src="https://raw.githubusercontent.com/JaimeCamachoDev/DiscoverNotes/main/Packages/com.jaimecamachodev.discovernotes/Documentation~/images/discovernotes-manifest.png" alt="DiscoverNotes" loading="lazy"><div class="texto"><strong>DiscoverNotes</strong><span>Es un componente de documentación visual en Unity para notas.</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/PackageCreator"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>PackageCreator</strong><span>Creador de Packages</span></div></a>
 </div>
 <h2>Demos y proyectos</h2>

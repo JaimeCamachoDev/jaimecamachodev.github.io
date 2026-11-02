@@ -42,18 +42,22 @@ def load_categories():
 PLACEHOLDERS = ("5b933a56-0ece-452a-99c0-1a641485a6b9",)
 
 
-def first_image(readme):
+def first_image(readme, repo, branch):
+    """Primera imagen del README; las rutas relativas (p. ej. .github/preview.gif) se resuelven al repo."""
     if not readme:
         return None
-    for m in re.finditer(r"!\[[^\]]*\]\((https?://[^)\s]+)\)|<img[^>]+src=\"(https?://[^\"]+)\"", readme):
+    for m in re.finditer(r"!\[[^\]]*\]\(<?([^)\s>]+)>?(?:\s+\"[^\"]*\")?\)|<img[^>]+src=\"([^\"]+)\"", readme):
         url = m.group(1) or m.group(2)
-        if not any(p in url for p in PLACEHOLDERS):
-            return url
+        if any(p in url for p in PLACEHOLDERS):
+            continue
+        if not re.match(r"https?://", url):
+            url = f"https://raw.githubusercontent.com/{USER}/{repo}/{branch}/" + url.lstrip("./")
+        return url
     return None
 
 
 def card(repo, info, readme):
-    img = first_image(readme)
+    img = first_image(readme, repo, info.get("default_branch", "main"))
     desc = html.escape(info.get("description") or "")
     url = info["html_url"]
     thumb = f'<img src="{html.escape(img)}" alt="{html.escape(repo)}" loading="lazy">' if img else '<div class="sin-imagen">Sin preview</div>'

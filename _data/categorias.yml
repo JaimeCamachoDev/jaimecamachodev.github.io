@@ -11,7 +11,7 @@
   repos: [UnityFolders, UnityMultiTool, UnityPreset, VAT, DiscoverNotes, PackageCreator]
 - titulo: "Demos y proyectos"
   descripcion: "Demos de VR, benchmarks y proyectos de prueba."
-  repos: [VR_Demo, VR_Demo_Animation, Shooter_VR_Demo, Chaperone, ArchVizPRO, Benchmark, CC-iC_UnityTools,
+  repos: [VR_Demo, Shooter_VR_Demo, Chaperone, ArchVizPRO, Benchmark, CC-iC_UnityTools,
           Unity-VFX-Technical-Test, DataBase, Test-IA, Demo-Sample, Rock-Bottom]
 - titulo: "Utilidades y recursos"
   descripcion: "Herramientas fuera de Unity y recopilaciones de recursos."
