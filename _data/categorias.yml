@@ -5,7 +5,9 @@
   repos: [Dissolve, Hologram, Water_Underwater, Clouds-Smoke, Explosion-Fire, Blood, Decals, Toon, Outline,
           Wireframe, SDF_Lines, FakeLight, FakeInterior, Fur-Hair, Galaxy, Sun, Boids, Paths, FloatingDust,
           SpeedLines, Stencil_Buffer, BlackAndWhiteArea, BlendMeshTexture, TileStochastic, PlanckScale,
-          ObservableUniverse, HUD_Sci-Fi, FootPrints, GhostAvatar, EchoReveal, AnimusFloor, Blueprint]
+          ObservableUniverse, HUD_Sci-Fi, FootPrints, GhostAvatar, EchoReveal, AnimusFloor, Blueprint,
+          Sand, TreeGrowth, Leaves-Petals, Vegetation-Wind, HeatDistortion, SkinnedMesh-VFX,
+          RockFall-Breaking, Lava, Insects, Wormhole, Constellation]
 - titulo: "Herramientas para Unity"
   descripcion: "Paquetes de editor publicados en npm (UPM)."
   repos: [UnityFolders, UnityMultiTool, UnityPreset, VAT, DiscoverNotes, PackageCreator]
