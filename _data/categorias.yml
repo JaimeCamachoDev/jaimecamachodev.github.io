@@ -7,7 +7,7 @@
           SpeedLines, Stencil_Buffer, BlackAndWhiteArea, BlendMeshTexture, TileStochastic, PlanckScale,
           ObservableUniverse, HUD_Sci-Fi, FootPrints, GhostAvatar, EchoReveal, AnimusFloor, Blueprint,
           Sand, TreeGrowth, Leaves-Petals, Vegetation-Wind, HeatDistortion, SkinnedMesh-VFX,
-          RockFall-Breaking, Lava, Insects, Wormhole, Constellation]
+          RockFall-Breaking, Lava, Insects, Wormhole, Constellation, Egyptian-Gods, VFX-Misc]
 - titulo: "Herramientas para Unity"
   descripcion: "Paquetes de editor publicados en npm (UPM)."
   repos: [UnityFolders, UnityMultiTool, UnityPreset, VAT, DiscoverNotes, PackageCreator]
