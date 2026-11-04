@@ -48,6 +48,8 @@ Technical Artist y desarrollador de Unity: efectos visuales, shaders y herramien
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/Insects"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Insects</strong><span>Enjambres de insectos con VFX Graph en Unity 6 URP.</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/Wormhole"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Wormhole</strong><span>Efecto de agujero de gusano con Shader Graph, Timeline y campo de estrellas en Unity 6 URP.</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/Constellation"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>Constellation</strong><span>Constelación de Orión con partículas en Unity 6 URP.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Egyptian-Gods"><img src="https://raw.githubusercontent.com/JaimeCamachoDev/Egyptian-Gods/main/github/preview.gif" alt="Egyptian-Gods" loading="lazy"><div class="texto"><strong>Egyptian-Gods</strong><span>Shaders de dioses egipcios para Unity 6 URP: Sobek con wireframe y disolución, y la Diosa.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/VFX-Misc"><img src="https://raw.githubusercontent.com/JaimeCamachoDev/VFX-Misc/main/github/preview.gif" alt="VFX-Misc" loading="lazy"><div class="texto"><strong>VFX-Misc</strong><span>Efectos pequeños para Unity 6 URP: estela de ojos, vuelo de plataforma, película, impacto de bastón, partículas de tiempo y luz ambiental.</span></div></a>
 </div>
 <h2>Herramientas para Unity</h2>
 <p class="cat-desc">Paquetes de editor publicados en npm (UPM).</p>
