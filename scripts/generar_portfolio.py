@@ -51,7 +51,11 @@ def first_image(readme, repo, branch):
         if any(p in url for p in PLACEHOLDERS):
             continue
         if not re.match(r"https?://", url):
-            url = f"https://raw.githubusercontent.com/{USER}/{repo}/{branch}/" + url.lstrip("./")
+            # github.com/<user>/<repo>/raw/... sirve tanto ficheros normales como de Git LFS
+            # (raw.githubusercontent.com devuelve solo el puntero de LFS).
+            # Se quita el prefijo "./" o "/", no caracteres sueltos: lstrip("./") rompía ".github/...".
+            path = re.sub(r"^(\./|/)+", "", url)
+            url = f"https://github.com/{USER}/{repo}/raw/{branch}/{path}"
         return url
     return None
 
