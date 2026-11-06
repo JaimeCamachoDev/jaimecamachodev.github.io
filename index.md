@@ -22,15 +22,15 @@ Technical Artist y desarrollador de Unity: efectos visuales, shaders y herramien
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityFolders"><img src="https://github.com/user-attachments/assets/95f4cd3a-c3be-4896-9a63-026bd422bce4" alt="UnityFolders" loading="lazy"><div class="texto"><strong>UnityFolders</strong><span>Carpetas personalizadas para Unity</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityMultiTool"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>UnityMultiTool</strong><span>Herramienta con diversos usos para unity</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/UnityPreset"><img src="https://github.com/user-attachments/assets/e3a901db-12f2-4c94-a371-15b7757a7203" alt="UnityPreset" loading="lazy"><div class="texto"><strong>UnityPreset</strong><span>Presets personalizados para Unity</span></div></a>
-<a class="tarjeta" href="https://github.com/JaimeCamachoDev/DiscoverNotes"><img src="https://raw.githubusercontent.com/JaimeCamachoDev/DiscoverNotes/main/Packages/com.jaimecamachodev.discovernotes/Documentation~/images/discovernotes-manifest.png" alt="DiscoverNotes" loading="lazy"><div class="texto"><strong>DiscoverNotes</strong><span>Es un componente de documentación visual en Unity para notas.</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/DiscoverNotes"><img src="https://github.com/JaimeCamachoDev/DiscoverNotes/raw/main/Packages/com.jaimecamachodev.discovernotes/Documentation~/images/discovernotes-manifest.png" alt="DiscoverNotes" loading="lazy"><div class="texto"><strong>DiscoverNotes</strong><span>Es un componente de documentación visual en Unity para notas.</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/PackageCreator"><div class="sin-imagen">Sin preview</div><div class="texto"><strong>PackageCreator</strong><span>Creador de Packages</span></div></a>
 </div>
 <h2>Demos y proyectos</h2>
 <p class="cat-desc">Demos de VR, benchmarks y proyectos de prueba.</p>
 <div class="rejilla">
-<a class="tarjeta" href="https://github.com/JaimeCamachoDev/VR_Demo"><img src="https://raw.githubusercontent.com/JaimeCamachoDev/VR_Demo/main/github/preview.gif" alt="VR_Demo" loading="lazy"><div class="texto"><strong>VR_Demo</strong><span>Proyecto base para experiencias VR en Quest 3</span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/VR_Demo"><img src="https://github.com/JaimeCamachoDev/VR_Demo/raw/main/.github/preview.gif" alt="VR_Demo" loading="lazy"><div class="texto"><strong>VR_Demo</strong><span>Proyecto base para experiencias VR en Quest 3</span></div></a>
 <a class="tarjeta" href="https://github.com/JaimeCamachoDev/DataBase"><img src="https://github.com/user-attachments/assets/c4be976a-a943-4879-bbd9-dccc1f5ae655" alt="DataBase" loading="lazy"><div class="texto"><strong>DataBase</strong><span>Repositorio destinado a albergar los datos para acceder desde los proyectos en Unity</span></div></a>
-<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Demo-Sample"><img src="https://raw.githubusercontent.com/JaimeCamachoDev/Demo-Sample/main/github/preview.gif" alt="Demo-Sample" loading="lazy"><div class="texto"><strong>Demo-Sample</strong><span></span></div></a>
+<a class="tarjeta" href="https://github.com/JaimeCamachoDev/Demo-Sample"><img src="https://github.com/JaimeCamachoDev/Demo-Sample/raw/main/.github/preview.gif" alt="Demo-Sample" loading="lazy"><div class="texto"><strong>Demo-Sample</strong><span></span></div></a>
 </div>
 <h2>Utilidades y recursos</h2>
 <p class="cat-desc">Herramientas fuera de Unity y recopilaciones de recursos.</p>
