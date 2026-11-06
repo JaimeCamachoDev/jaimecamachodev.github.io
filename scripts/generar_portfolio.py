@@ -46,6 +46,8 @@ def first_image(readme, repo, branch):
     """Primera imagen del README; las rutas relativas (p. ej. .github/preview.gif) se resuelven al repo."""
     if not readme:
         return None
+    # Los bloques de código (``` o ~~~) pueden traer ejemplos de imágenes que no existen
+    readme = re.sub(r"^(```|~~~).*?^\1", "", readme, flags=re.S | re.M)
     for m in re.finditer(r"!\[[^\]]*\]\(<?([^)\s>]+)>?(?:\s+\"[^\"]*\")?\)|<img[^>]+src=\"([^\"]+)\"", readme):
         url = m.group(1) or m.group(2)
         if any(p in url for p in PLACEHOLDERS):
