@@ -62,13 +62,22 @@ def first_image(readme, repo, branch):
     return None
 
 
+# Topics de tecnología que salen como botones de filtro (topic -> etiqueta)
+FILTROS = [("vfx-graph", "VFX Graph"), ("shader-graph", "Shader Graph"), ("hlsl", "HLSL"),
+           ("amplify-shader-editor", "Amplify"), ("particle-system", "Partículas"), ("vr", "VR"),
+           ("render-graph", "RenderGraph"), ("timeline", "Timeline"), ("npm-package", "Paquete npm")]
+
+
 def card(repo, info, readme):
     img = first_image(readme, repo, info.get("default_branch", "main"))
     desc = html.escape(info.get("description") or "")
     url = info["html_url"]
+    topics = info.get("topics") or []
+    tags = html.escape(" ".join(topics))
+    texto = html.escape(" ".join([repo, info.get("description") or "", *topics]))
     thumb = f'<img src="{html.escape(img)}" alt="{html.escape(repo)}" loading="lazy">' if img else '<div class="sin-imagen">Sin preview</div>'
-    return (f'<a class="tarjeta" href="{url}">{thumb}<div class="texto"><strong>{html.escape(repo)}</strong>'
-            f'<span>{desc}</span></div></a>')
+    return (f'<a class="tarjeta" href="{url}" data-tags="{tags}" data-texto="{texto}">{thumb}<div class="texto"><strong>{html.escape(repo)}</strong>'
+            f'<span>{desc}</span></div></a>'), set(topics)
 
 
 def npm_packages():
@@ -86,6 +95,7 @@ def main():
            "Technical Artist y desarrollador de Unity: efectos visuales, shaders y herramientas de editor para proyectos en tiempo real y VR.",
            "", '<div class="portfolio">']
     shown = 0
+    secciones, usados = [], set()
     for cat in load_categories():
         cards = []
         for repo in cat["repos"]:
@@ -93,21 +103,33 @@ def main():
             if not info or info.get("private") or info.get("archived") or info.get("fork") or info.get("disabled"):
                 continue
             readme = get(f"https://api.github.com/repos/{USER}/{repo}/readme", raw=True)
-            cards.append(card(repo, info, readme))
+            c, topics = card(repo, info, readme)
+            cards.append(c)
+            usados |= topics
         if cards:
             shown += len(cards)
-            out += [f'<h2>{html.escape(cat["titulo"])}</h2>', f'<p class="cat-desc">{html.escape(cat["descripcion"])}</p>',
-                    '<div class="rejilla">', *cards, "</div>"]
+            secciones += ['<section class="categoria">', f'<h2>{html.escape(cat["titulo"])}</h2>',
+                          f'<p class="cat-desc">{html.escape(cat["descripcion"])}</p>',
+                          '<div class="rejilla">', *cards, "</div>", "</section>"]
     pkgs = npm_packages()
     if pkgs:
-        out += ["<h2>Paquetes npm</h2>",
-                '<p class="cat-desc">Se instalan desde el Package Manager de Unity añadiendo el registro de npm con el ámbito <code>com.jaimecamachodev</code>.</p>',
-                '<table class="paquetes"><tr><th>Paquete</th><th>Versión</th><th>Descripción</th></tr>']
+        secciones += ['<section class="categoria">', "<h2>Paquetes npm</h2>",
+                      '<p class="cat-desc">Se instalan desde el Package Manager de Unity añadiendo el registro de npm con el ámbito <code>com.jaimecamachodev</code>.</p>',
+                      '<table class="paquetes"><tr><th>Paquete</th><th>Versión</th><th>Descripción</th></tr>']
         for p in pkgs:
-            out.append(f'<tr><td><a href="https://www.npmjs.com/package/{p["name"]}">{p["name"]}</a></td>'
-                       f'<td>{p["version"]}</td><td>{html.escape(p.get("description") or "")}</td></tr>')
-        out.append("</table>")
-    out += ["</div>", ""]
+            texto = html.escape(f'{p["name"]} {p.get("description") or ""}')
+            secciones.append(f'<tr data-tags="npm-package unity-editor" data-texto="{texto}"><td><a href="https://www.npmjs.com/package/{p["name"]}">{p["name"]}</a></td>'
+                             f'<td>{p["version"]}</td><td>{html.escape(p.get("description") or "")}</td></tr>')
+        secciones += ["</table>", "</section>"]
+        usados.add("npm-package")
+    chips = [f'<button type="button" class="filtro-chip" data-tag="{tag}" aria-pressed="false">{html.escape(nombre)}</button>'
+             for tag, nombre in FILTROS if tag in usados]
+    out += ['<div class="filtro">',
+            '<input type="search" id="filtro-texto" placeholder="Buscar efectos, shaders, herramientas…" aria-label="Buscar en el portfolio" autocomplete="off">',
+            f'<div class="filtro-chips" role="group" aria-label="Filtrar por tecnología">{"".join(chips)}</div>',
+            "</div>",
+            '<p id="filtro-vacio" class="cat-desc" hidden>No hay nada que coincida con el filtro.</p>',
+            *secciones, "</div>", ""]
     open(os.path.join(ROOT, "index.md"), "w", encoding="utf-8").write("\n".join(out))
     print(f"index.md generado: {shown} repos públicos, {len(pkgs)} paquetes npm")
 

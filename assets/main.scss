@@ -1,6 +1,6 @@
 ---
 ---
-// Modo oscuro: variables de minima antes de importarlo
+// Variables de minima (solo para compilar su base); los colores reales van en las variables CSS de abajo
 $background-color: #0f1115;
 $text-color:       #e6e6e6;
 $brand-color:      #6cb6ff;
@@ -10,27 +10,106 @@ $grey-color-dark:  #c9ccd1;
 
 @import "minima";
 
-html { color-scheme: dark; }
-body { background: $background-color; color: $text-color; }
+// --- Temas: oscuro (por defecto) y claro ---
+:root, :root[data-tema="oscuro"] {
+  color-scheme: dark;
+  --fondo: #0f1115;
+  --fondo-cabecera: #12151b;
+  --fondo-tarjeta: #161a21;
+  --fondo-imagen: #0b0d11;
+  --fondo-codigo: #171a21;
+  --fila-par: #13161c;
+  --texto: #e6e6e6;
+  --texto-fuerte: #f2f2f2;
+  --texto-suave: #a9aeb5;
+  --gris: #9aa0a6;
+  --borde: #2a2e36;
+  --marca: #6cb6ff;
+  --marca-visitado: #4fa3ff;
+  --sombra: rgba(0, 0, 0, .5);
+}
+:root[data-tema="claro"] {
+  color-scheme: light;
+  --fondo: #f6f7f9;
+  --fondo-cabecera: #ffffff;
+  --fondo-tarjeta: #ffffff;
+  --fondo-imagen: #e9ecf0;
+  --fondo-codigo: #eef0f3;
+  --fila-par: #f0f2f5;
+  --texto: #1f2328;
+  --texto-fuerte: #0d1117;
+  --texto-suave: #57606a;
+  --gris: #57606a;
+  --borde: #d0d7de;
+  --marca: #0969da;
+  --marca-visitado: #0a58b5;
+  --sombra: rgba(31, 35, 40, .15);
+}
 
-.site-header { border-top-color: $brand-color; border-bottom-color: $grey-color-light; background: #12151b; }
-.site-title, .site-title:visited { color: #f2f2f2; }
-.site-nav .page-link { color: $text-color; }
-.site-nav { background-color: #12151b; border-color: $grey-color-light; }
-.site-footer { border-top-color: $grey-color-light; }
-a:visited { color: darken($brand-color, 8%); }
+body { background: var(--fondo); color: var(--texto); }
+a { color: var(--marca); }
+a:visited { color: var(--marca-visitado); }
+a:hover { color: var(--marca); }
+blockquote { color: var(--gris); border-left-color: var(--borde); }
 
-code, pre { background: #171a21; border-color: $grey-color-light; color: #e6e6e6; }
-table { color: $text-color; }
-table th { background: #171a21; border-color: $grey-color-light; }
-table td { border-color: $grey-color-light; }
-table tr:nth-child(even) { background: #13161c; }
+.site-header { border-top-color: var(--marca); border-bottom-color: var(--borde); background: var(--fondo-cabecera); }
+.site-title, .site-title:visited { color: var(--texto-fuerte); }
+.site-nav .page-link, .site-nav .page-link:visited { color: var(--texto); }
+.site-nav { background-color: var(--fondo-cabecera); border-color: var(--borde); }
+.site-nav .menu-icon > svg path { fill: var(--texto); }
+.site-footer { border-top-color: var(--borde); }
+.footer-col-wrapper, .post-meta, .footer-heading { color: var(--gris); }
+.svg-icon { fill: var(--gris); }
+
+code, pre { background: var(--fondo-codigo); border-color: var(--borde); color: var(--texto); }
+table { color: var(--texto); border-color: var(--borde); }
+table th { background: var(--fondo-codigo); border-color: var(--borde); }
+table td { border-color: var(--borde); }
 table tr, table tr:nth-child(odd) { background: transparent; }
+table tr:nth-child(even) { background: var(--fila-par); }
+
+// --- Botón de tema ---
+.cambiar-tema {
+  float: right;
+  margin: 14px 0 0 12px;
+  width: 34px; height: 34px;
+  border: 1px solid var(--borde); border-radius: 50%;
+  background: transparent; color: var(--texto);
+  font-size: 17px; line-height: 1; cursor: pointer;
+  &:hover, &:focus-visible { border-color: var(--marca); color: var(--marca); }
+  .icono-sol { display: none; }
+}
+:root[data-tema="oscuro"] .cambiar-tema .icono-sol { display: inline; }
+:root[data-tema="oscuro"] .cambiar-tema .icono-luna { display: none; }
 
 .wrapper { max-width: 1200px; }
 
-.portfolio h2 { margin-top: 2.2rem; border-bottom: 1px solid $grey-color-light; padding-bottom: .3rem; }
-.cat-desc { color: $grey-color; margin-bottom: 1rem; }
+// --- Portfolio ---
+.portfolio h2 { margin-top: 2.2rem; border-bottom: 1px solid var(--borde); padding-bottom: .3rem; }
+.cat-desc { color: var(--gris); margin-bottom: 1rem; }
+[hidden] { display: none !important; }
+
+.filtro {
+  position: sticky; top: 0; z-index: 2;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  margin: 1.2rem 0 .4rem; padding: 10px 0;
+  background: var(--fondo);
+  input[type="search"] {
+    flex: 1 1 260px; min-width: 0;
+    padding: 8px 12px; font-size: .95rem;
+    color: var(--texto); background: var(--fondo-tarjeta);
+    border: 1px solid var(--borde); border-radius: 8px;
+    &:focus { outline: none; border-color: var(--marca); }
+  }
+}
+.filtro-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.filtro-chip {
+  padding: 5px 11px; font-size: .82rem; cursor: pointer;
+  color: var(--texto-suave); background: transparent;
+  border: 1px solid var(--borde); border-radius: 999px;
+  &:hover { border-color: var(--marca); color: var(--texto); }
+  &[aria-pressed="true"] { background: var(--marca); border-color: var(--marca); color: #fff; }
+}
 
 .rejilla {
   display: grid;
@@ -40,16 +119,20 @@ table tr, table tr:nth-child(odd) { background: transparent; }
 
 .tarjeta {
   display: flex; flex-direction: column;
-  border: 1px solid $grey-color-light; border-radius: 10px; overflow: hidden;
-  color: inherit; text-decoration: none; background: #161a21;
+  border: 1px solid var(--borde); border-radius: 10px; overflow: hidden;
+  color: inherit; text-decoration: none; background: var(--fondo-tarjeta);
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
   &:visited { color: inherit; }
-  &:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,.5); border-color: $brand-color; text-decoration: none; }
-  img, .sin-imagen { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #0b0d11; display: block; }
-  .sin-imagen { display: flex; align-items: center; justify-content: center; color: #6b7078; font-size: .85rem; }
+  &:hover { transform: translateY(-3px); box-shadow: 0 8px 22px var(--sombra); border-color: var(--marca); text-decoration: none; }
+  img, .sin-imagen { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--fondo-imagen); display: block; }
+  .sin-imagen { display: flex; align-items: center; justify-content: center; color: var(--gris); font-size: .85rem; }
   .texto { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 4px; }
-  strong { font-size: 1rem; color: #f2f2f2; }
-  span { font-size: .85rem; color: #a9aeb5; line-height: 1.35; }
+  strong { font-size: 1rem; color: var(--texto-fuerte); }
+  span { font-size: .85rem; color: var(--texto-suave); line-height: 1.35; }
 }
 
 .paquetes { width: 100%; font-size: .9rem; td:first-child { white-space: nowrap; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .tarjeta { transition: none; &:hover { transform: none; } }
+}
