@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "_data/categorias.yml"
+      - "_data/descripciones_en.yml"
       - "scripts/generar_portfolio.py"
       - ".github/workflows/portfolio.yml"
   schedule:
@@ -29,5 +30,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.md
+          git add index.md en/index.md
           git diff --cached --quiet && echo "Sin cambios" || { git commit -m "Actualiza el portfolio"; git push; }

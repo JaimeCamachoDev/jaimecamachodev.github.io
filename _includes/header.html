@@ -3,8 +3,21 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    <button type="button" class="cambiar-tema" aria-label="Cambiar entre tema claro y oscuro" title="Tema claro / oscuro">
+    {%- if page.lang == "en" -%}
+      {%- assign page_paths = site.header_pages_en -%}
+      {%- assign inicio = "/en/" -%}
+    {%- else -%}
+      {%- assign inicio = "/" -%}
+    {%- endif -%}
+    <a class="site-title" rel="author" href="{{ inicio | relative_url }}">{{ site.title | escape }}</a>
+    {%- if page.lang == "en" -%}
+      {%- if page.url == "/en/about/" -%}{%- assign otro = "/sobre-mi/" -%}{%- else -%}{%- assign otro = "/" -%}{%- endif -%}
+      <a class="cambiar-idioma" href="{{ otro | relative_url }}" hreflang="es" lang="es" title="Ver en español">ES</a>
+    {%- else -%}
+      {%- if page.url == "/sobre-mi/" -%}{%- assign otro = "/en/about/" -%}{%- else -%}{%- assign otro = "/en/" -%}{%- endif -%}
+      <a class="cambiar-idioma" href="{{ otro | relative_url }}" hreflang="en" lang="en" title="View in English">EN</a>
+    {%- endif -%}
+    <button type="button" class="cambiar-tema" aria-label="{% if page.lang == "en" %}Switch between light and dark theme{% else %}Cambiar entre tema claro y oscuro{% endif %}" title="{% if page.lang == "en" %}Light / dark theme{% else %}Tema claro / oscuro{% endif %}">
       <span class="icono-sol" aria-hidden="true">☀</span><span class="icono-luna" aria-hidden="true">☾</span>
     </button>
 

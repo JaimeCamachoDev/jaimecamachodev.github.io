@@ -4,9 +4,12 @@ url: "https://jaimecamachodev.github.io"
 theme: minima
 
 github_username: JaimeCamachoDev
+lang: es
 
 header_pages:
   - _pages/about.md
+header_pages_en:
+  - _pages/about-en.md
 
 defaults:
   - scope:

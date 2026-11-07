@@ -1,7 +1,11 @@
 # Categorías del portfolio. Añade aquí cada repo nuevo en su categoría.
 # Solo se muestran los repos públicos; los privados o archivados se omiten solos.
+# titulo_en/descripcion_en: textos de la versión en inglés (/en/). Las descripciones de
+# cada repo en inglés están en _data/descripciones_en.yml.
 - titulo: "VFX y shaders"
   descripcion: "Efectos visuales, shaders y sistemas de partículas para Unity URP."
+  titulo_en: "VFX and shaders"
+  descripcion_en: "Visual effects, shaders and particle systems for Unity URP."
   repos: [Dissolve, Hologram, Water_Underwater, Clouds-Smoke, Explosion-Fire, Blood, Decals, Toon, Outline,
           Wireframe, SDF_Lines, FakeLight, FakeInterior, Fur-Hair, Galaxy, Sun, Boids, Paths, FloatingDust,
           SpeedLines, Stencil_Buffer, BlackAndWhiteArea, BlendMeshTexture, TileStochastic, PlanckScale,
@@ -10,14 +14,22 @@
           RockFall-Breaking, Lava, Insects, Wormhole, Constellation, Egyptian-Gods, VFX-Misc]
 - titulo: "Herramientas para Unity"
   descripcion: "Paquetes de editor publicados en npm (UPM)."
+  titulo_en: "Unity tools"
+  descripcion_en: "Editor packages published on npm (UPM)."
   repos: [UnityFolders, UnityMultiTool, UnityPreset, VAT, DiscoverNotes, PackageCreator]
 - titulo: "Demos y proyectos"
   descripcion: "Demos de VR, benchmarks y proyectos de prueba."
+  titulo_en: "Demos and projects"
+  descripcion_en: "VR demos, benchmarks and test projects."
   repos: [VR_Demo, Shooter_VR_Demo, Chaperone, ArchVizPRO, Benchmark, CC-iC_UnityTools,
           Unity-VFX-Technical-Test, DataBase, Test-IA, Demo-Sample, Rock-Bottom]
 - titulo: "Utilidades y recursos"
   descripcion: "Herramientas fuera de Unity y recopilaciones de recursos."
+  titulo_en: "Utilities and resources"
+  descripcion_en: "Tools outside Unity and resource collections."
   repos: [unity-ref-check, EditorVideo, Substance_Export, Tool_AppScript_OVRMetrics, Unity_Resources]
 - titulo: "Tiempo libre"
   descripcion: "Mods y proyectos personales."
+  titulo_en: "Spare time"
+  descripcion_en: "Mods and personal projects."
   repos: [HyHorde-Arena-PVE]

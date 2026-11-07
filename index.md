@@ -2,6 +2,7 @@
 layout: page
 title: Portfolio
 permalink: /
+lang: es
 ---
 
 Technical Artist y desarrollador de Unity: efectos visuales, shaders y herramientas de editor para proyectos en tiempo real y VR.

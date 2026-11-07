@@ -82,6 +82,18 @@ table tr:nth-child(even) { background: var(--fila-par); }
 :root[data-tema="oscuro"] .cambiar-tema .icono-sol { display: inline; }
 :root[data-tema="oscuro"] .cambiar-tema .icono-luna { display: none; }
 
+// --- Enlace de idioma (ES / EN) ---
+.site-header .cambiar-idioma {
+  float: right;
+  margin: 14px 0 0 12px;
+  height: 34px; padding: 0 10px;
+  display: inline-flex; align-items: center;
+  border: 1px solid var(--borde); border-radius: 17px;
+  color: var(--texto); font-size: 13px; font-weight: 600; letter-spacing: .04em;
+  text-decoration: none;
+  &:hover, &:focus-visible { border-color: var(--marca); color: var(--marca); text-decoration: none; }
+}
+
 .wrapper { max-width: 1200px; }
 
 // --- Portfolio ---
